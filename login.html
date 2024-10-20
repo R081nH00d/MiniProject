@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="login.css">
-    <link rel="icon" href="icon.ico">
+    <link rel="stylesheet" href="assets/login.css">
+    <link rel="icon" href="assets/icon.ico">
 </head>
 <body style="background: #100425;;">
 
@@ -13,7 +13,7 @@
 
     <div class="Logo" style="top:40px; left: 45px;">
                 
-        <img class="Ellipse" style="width:155px;" src="newlogo.png">
+        <img class="Ellipse" style="width:155px;" src="assets/newlogo.png">
     </div>
 
     <div class="home">
@@ -31,8 +31,8 @@
     </div>
     
     <div>
-        <img class="user" src="user.png" alt="">
-        <img  class="gets" src="getstarted.png" alt="">
+        <img class="user" src="assets/user.png" alt="">
+        <img  class="gets" src="assets/getstarted.png" alt="">
         <a class="start" href="">Get Started</a>
     </div>
 
@@ -57,24 +57,29 @@
         <p style="position: absolute; color: white; font-size: 64px; left:190px; top:50px; font-weight: 600px;">Login</p>
 
         <p style="color: aliceblue;position: absolute; top:192px; left: 75px; font-size: 20px; font-weight: 600px;">Email</p>
-        <img src="Letter.png" alt="" style="position: absolute; top:188px; left: 455px;">
+        
+        <img src="assets/Letter.png" alt="" style="position: absolute; top:188px; left: 455px;">
         
         <div class="line"></div>
 
         <p style="color: aliceblue; position: absolute; top:312px; left:75px; font-size: 20px; font-weight: 600px;">Password</p>
-        <img src="Lock.png" alt="" style="position: absolute; top:307px; left:465px;">
+        <img src="assets/Lock.png" alt="" style="position: absolute; top:307px; left:465px;">
         <div class="line" style="top:340px"></div>
+
         
-        <div class="button"></div>
-        <p style="position: absolute; color: white; font-size: 40px; top: 405px; left: 219px;">Login</p>
+        
+        <p style="position: absolute; color: white; font-size: 40px; top: 405px; left: 219px;"></p>
 
         <p style="position: absolute; color: aliceblue; top:470px; left: 195px; font-weight: 600px; font-size: 20px;">Forgot Password</p>
         <p style="position: absolute; color: aliceblue; top:495px; left: 203px; font-weight: 600px; font-size: 20px;">Create Account</p>
 
-
-        
     </div>
+    <img src="assets/BULL.png" alt="" class="bull">
 
-    <img src="BULL.png" alt="" class="bull">
+    <form action="/" method="POST">
+        <input type="email" name="email" class="input-field" placeholder="Email">
+        <input type="password" name="password" class="input-field" placeholder="Password" style="top:465px;">
+        <input type="submit" class="button" value="LOGIN" style="border: none; color: white;font-size: 35px; top:560px; left: 970px;">
+    </form>
 </body>
 </html>
