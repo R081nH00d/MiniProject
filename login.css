@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif ;
+}
+.blur2,
+.blur1{
+
+    position: absolute;
+    width: 559px;
+    height: 298px;
+    left: -140px;
+    flex-shrink: 0;
+    border-radius: 829px;
+    background: linear-gradient(125deg, rgba(235, 0, 255, 0.60) 5.61%, rgba(0, 255, 240, 0.60 ) 95.82%);
+    filter: blur(150px);
+    rotate: -45deg;
+}
+
+.imgbox1{
+
+    position: absolute;
+    width: 565px;
+    height: 560px;
+    flex-shrink: 0;
+    background: linear-gradient(-25deg, #EB00FF 40%, #00FFF0 ); 
+    border-radius: 90px;
+    left: 800px;
+    top: 160px;
+}
+
+.bull{
+    
+    position: absolute;
+    top:80px;
+    left: 370px;
+    width: 478px; 
+    height: 675.517px;
+    flex-shrink: 0;
+}
+.imgbox2{
+
+    position: absolute; 
+    background: #100425;
+    width: 555px; 
+    height: 550px;
+    border-radius: 90px;
+    left: 5px;
+    top:5px;
+}
+
+.box1{
+    left: 64px;
+    background-color: #100425;
+   /* border-radius: 88px;*/
+    box-shadow: rgba(235, 0, 255, 0.25) 0px 60px 100px -25px inset, rgba(235, 0, 255, 0.3) 0px 40px 60px -30px, rgba(0, 255, 240, 0.35) 0px -5px 6px 0px inset;
+}
+
+.line{
+    position: absolute;
+    top:220px;
+    left: 75px;
+    width: 420px;
+    height: 5px;
+   /* background: linear-gradient(270deg, rgba(235, 0, 255, 0.16) 0%, rgba(0, 255, 240, 0.16) 100%);*/
+   background: linear-gradient(125deg, rgba(235, 0, 255, 0.60) 5.61%, rgba(0, 255, 240, 0.60 ) 95.82%);
+
+}
+
+.seemore{
+    display: flex;
+    width: 176.608px;
+    height: 63.711px;
+    padding: 12px 31px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    top: 680px;
+    left: 20px;
+    flex-shrink: 0; 
+    border-radius: 33.5px;
+    background: linear-gradient(110deg, #EB00FF 12.83%, #00FFF0 118.29%);
+   /* box-shadow: 16.600000381469727px 16.600000381469727px 16.600000381469727px;*/
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.6), 0 0 40px rgba(0, 207, 255, 0.6);
+    transition: box-shadow 0.3s ease;
+    position: absolute;
+}
+
+.see{
+    top: 223px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal; 
+    font-weight: 400;
+    line-height: 1px; /* 4.167% */
+    text-transform: capitalize;
+}
+.button{
+
+    position: absolute;
+    top:400px;
+    left: 170px;
+    width: 200px;
+    border-radius: 30px;
+    height: 60px;
+    background: linear-gradient(110deg, #EB00FF 12.83%, #00FFF0 118.29%);
+    
+}
+
+.Logo{
+    width: 120px; 
+    height: 120px; 
+    left: 33px; 
+    top: 25px; 
+    position: absolute;
+}
+
+.home{
+    width: 130px; 
+    height: 57px; 
+    left: 166px;
+    top: 13px; 
+    position: absolute
+}
+.homerect{
+    width: 130px; 
+    height: 57px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute;
+}
+.home{
+    width: 80px; 
+    height: 30px; 
+    left: 119px; 
+    top: 25px; 
+    position: absolute; 
+    text-align: center; 
+    color: white; 
+    font-size: 30px; 
+    font-family: Poppins; 
+    font-weight: 600; 
+    line-height: 30px; 
+    letter-spacing: 0.20px; 
+    word-wrap: break-word
+}
+
+.products{
+    width: 130px; 
+    height: 57px; 
+    left: 312px; 
+    top: 12px; 
+    position: absolute;
+}
+
+.productsrect{
+    width: 130px; 
+    height: 57px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute;
+}
+
+.products{
+    width: 117px; 
+    height: 30px; 
+    left: 180px; 
+    top: 25px; 
+    position: absolute; 
+    text-align: center; 
+    color: white; 
+    font-size: 30px; 
+    font-family: Poppins; 
+    font-weight: 600; 
+    line-height: 30px; 
+    letter-spacing: 0.20px; 
+    word-wrap: break-word;
+}
+
+.community{
+    width: 130px; 
+    height: 57px; 
+    left: 458px; 
+    top: 12px; 
+    position: absolute;
+}
+
+.commrect{
+    width: 130px; 
+    height: 57px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute;
+}
+
+.community{
+    width: 160px; 
+    height: 30px; 
+    left: 255px; 
+    top: 25px; 
+    position: absolute; 
+    text-align: center; 
+    color: white; 
+    font-size: 30px; 
+    font-family: Poppins; 
+    font-weight: 600; 
+    line-height: 30px; 
+    letter-spacing: 0.20px; 
+    word-wrap: break-word
+}
+
+.user{
+    width: 90px; 
+    height: 67px; 
+    left: 1190px; 
+    top: 25px; 
+    position: absolute; 
+    box-shadow: transparent;
+}
+
+.start{
+    
+    position: absolute;
+    top: 40px;
+    left: 1290px;
+    font-family: Poppins;
+    text-align: center;
+    color: white; 
+    font-weight: 600;
+    font-size: 25px; 
+}
+.gets{
+
+    top:30px;
+    left:1275px;
+    width:180px;
+    height:60px;
+    position: absolute;
+}
