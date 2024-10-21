@@ -179,6 +179,7 @@ a{
     position: absolute; 
     box-shadow: transparent;
 }
+
 .gets{
 
     top:30px;
@@ -198,6 +199,7 @@ a{
     color: white; 
     font-weight: 600;
     font-size: 25px; 
+    opacity: 0;
 }
 
 .colors{

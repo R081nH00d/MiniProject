@@ -4,6 +4,8 @@ const bodyParser = require("body-parser");
 const encoder = bodyParser.urlencoded();
 const app = express();
 
+//app.use(express.static(path.join(__dirname, "MINIPROJECT")));
+
 app.use("/assets",express.static("assets"));
 
 const connection =mysql.createConnection({
@@ -20,8 +22,23 @@ connection.connect(function(error){
 
 app.get("/", function(req,res){
 
-    res.sendFile(__dirname + "/login.html");
+    res.sendFile(__dirname + "/prj.html");
+    //res.sendFile(__dirname + "/login.html");
 })
+
+app.post("/login", function(req,res){
+
+    res.sendFile(__dirname + "/login.html")
+})
+
+app.get("/signup", function(req,res){
+
+    res.sendFile(__dirname + "/signup.html")
+})
+
+/*app.get("/signup", (req, res) => {
+    res.sendFile(path.join(__dirname,  "signup.html"));
+});*/
 
 app.post("/",encoder, function(req,res){
 
@@ -41,6 +58,27 @@ app.post("/",encoder, function(req,res){
          } 
          res.end();
     })
+})
+
+app.post("/reg",encoder, function(req,res){
+
+    var email=req.body.email;
+    var password=req.body.password;
+
+    console.log(email);
+    console.log(password);
+
+    connection.query("insert into loginuser(user_name,user_pass)values(?,?)",[email,password],function(error,results,fields){
+
+        if(results.length>0){
+            console.log("NOT");
+        }else{
+            console.log("SUCESS");
+        }
+
+        res.end();
+    })
+
 })
 
 
