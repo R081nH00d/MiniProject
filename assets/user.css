@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif ;
+}
+
+.navtab{
+
+    position: absolute;
+    width: 1525px;
+    height: 150px;
+    left:2px;
+}
+
+.selection{
+
+    position: absolute;
+    width: 1525px;
+    height: 500px;
+    top:150px;
+
+}

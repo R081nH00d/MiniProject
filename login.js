@@ -50,7 +50,7 @@ app.post("/",encoder, function(req,res){
 
     connection.query("select * from loginuser where user_name = ? and user_pass = ?",[email,password], function(error,results,fields){
          if(results.length > 0){
-            res.redirect("/");
+            res.redirect("/user");
             console.log("Sucess");
          }else{
             res.redirect("/");
@@ -59,6 +59,11 @@ app.post("/",encoder, function(req,res){
          res.end();
     })
 })
+
+app.get("/user", function(req, res) {
+    res.sendFile(__dirname + "/user.html"); // Serve the user.html file when /user is accessed
+});
+
 
 app.post("/reg",encoder, function(req,res){
 
