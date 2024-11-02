@@ -77,8 +77,11 @@ app.post("/reg",encoder, function(req,res){
 
         if(results.length>0){
             console.log("NOT");
+            res.redirect("/signup");
+
         }else{
             console.log("SUCESS");
+            res.redirect("/sign");
         }
 
         res.end();
@@ -86,5 +89,10 @@ app.post("/reg",encoder, function(req,res){
 
 })
 
+app.get("/sign", function(req, res) {
+    res.sendFile(__dirname + "/login.html"); // Serve the user.html file when /user is accessed
+});
 
-app.listen(4003);
+
+
+app.listen(4007);
