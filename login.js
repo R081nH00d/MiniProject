@@ -36,6 +36,16 @@ app.get("/signup", function(req,res){
     res.sendFile(__dirname + "/signup.html")
 })
 
+app.get("/candle", function(req,res){
+
+    res.sendFile(__dirname + "/candel.html")
+})
+
+app.get("/home", function(req,res){
+
+    res.sendFile(__dirname + "/prj.html")
+})
+
 /*app.get("/signup", (req, res) => {
     res.sendFile(path.join(__dirname,  "signup.html"));
 });*/
@@ -95,4 +105,4 @@ app.get("/sign", function(req, res) {
 
 
 
-app.listen(4007);
+app.listen(4002);

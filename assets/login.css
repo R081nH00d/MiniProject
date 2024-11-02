@@ -132,7 +132,7 @@
     position: absolute;
 }
 .home{
-    width: 80px; 
+    width: 85px; 
     height: 30px; 
     left: 119px; 
     top: 25px; 
@@ -164,7 +164,7 @@
 }
 
 .products{
-    width: 117px; 
+    width: 135px; 
     height: 30px; 
     left: 180px; 
     top: 25px; 
@@ -258,4 +258,9 @@
 input::placeholder {
     color: white; /* Completely transparent */
     font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }

@@ -8,7 +8,7 @@
 .navtab{
 
     position: absolute;
-    width: 1525px;
+    width: 1505px;
     height: 150px;
     left:2px;
 }
@@ -16,8 +16,83 @@
 .selection{
 
     position: absolute;
-    width: 1525px;
+    width: 1505px;
     height: 500px;
     top:150px;
 
+}
+.box{
+
+    position: absolute;
+    width: 307px;
+    height: 68px;
+    top:270px;
+    left: 130px;
+    background: linear-gradient(93deg, #EB00FF 5.85%, #00FFF0 95.94%);
+    border-radius: 200px;
+}
+.inbox{
+    position: absolute;
+    width: 299px;
+    height: 60px;
+    border-radius: 200px;
+    top:4px;
+    left: 4px;
+    background:#100425;
+}
+
+.options{
+
+    position: absolute;
+    width: 1505px;
+    height: 900px;
+    top:550px;
+}
+
+.box1{
+
+    position: absolute;
+    width: 1080px;
+    height: 68px;
+    background: linear-gradient(93deg, #EB00FF 35.85%, #00FFF0 95.94%);
+    top: 170px;
+    left: 230px;
+    border-radius: 30px;
+}
+.innerbox1{
+
+    position: absolute;
+    width: 1075px;
+    height: 63px;
+    background:#100425;
+    top:3px;
+    left:3px;
+    border-radius: 30px;
+}
+
+.blur{
+    position: absolute;
+    top: 100px;
+    left: -400px;
+    width: 600px;
+    height: 500px;
+    background: linear-gradient(93deg, #EB00FF 35.85%, #00FFF0 95.94%);
+    filter: blur(300px);
+}
+
+.box2{
+    position: absolute;
+    top:200px;
+    left:150px;
+    width: 1283px;
+    height: 140px;
+    border-radius: 33.893px;
+    background: linear-gradient(90deg, #EB00FF -17.38%, #00FFF0 114.34%);
+}
+
+.candlepattern{
+    position: absolute;
+    top:1000px;
+    width: 1505px;
+    height: 600px;
 }
