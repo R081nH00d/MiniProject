@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Information</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #100425; 
+            margin: 0;
+            padding: 20px;
+        }
+        .header-box {
+           
+            background-image: linear-gradient(to right, #b543c4, #2377d7);
+  background-size: 200px 200px;
+  animation: gradient-animation 3s ease-in-out infinite;
+            border: 2px solid purple; /* Box border */
+            padding: 20px; /* Padding inside the box */
+            text-align: center; /* Center text inside the box */
+            margin-bottom: 20px; /* Space below the box */
+            border-radius: 8px; /* Rounded corners */
+            display: flex; /* Use flexbox to align icon and text */
+            align-items: center; /* Vertically center icon and text */
+            justify-content: center; /* Horizontally center icon and text */
+        }
+
+        h1 {
+            color: white; /* Title color */
+            margin: 0; /* Remove default margin */
+            font-size: 24px; /* Adjust font size */
+        }
+        .icon {
+            width: 100px; /* Set desired width */
+            height: 100px; /* Set desired height */
+        }
+
+        p {
+            font-size: 18px;
+            color: #555; /* Paragraph text color */
+        }
+        ul {
+            
+            list-style-type: none; /* Remove bullet points */
+            padding: 0; /* Remove default padding */
+            display: flex; /* Use flexbox to align items horizontally */
+            justify-content: center; /* Center the buttons */
+            flex-wrap: wrap; /* Allow wrapping to next line if necessary *
+            display: grid; /* Use grid layout */
+            grid-template-columns: repeat(2, 1fr); /* Create three equal columns */
+            gap: 40px; 
+
+        }
+        li {
+            margin: 10px 0; /* Add some space between list items */
+        }
+        a {
+            text-decoration: none; /* Remove underline from links */
+            color: blue; /* Change link color */
+        }
+        a:hover {
+            text-decoration: underline; /* Underline on hover for better UX */
+            color: darkblue; /* Change link color on hover */
+        }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            margin-top: 20px;
+        }
+        .pdf-button-container {
+            display: flex; /* Use flexbox for layout */
+            justify-content: space-between; /* Space between buttons */
+            flex-wrap: wrap; /* Allow wrapping to the next line */
+        }
+        
+        .pdf-button {
+            flex: 1 1 30%; /* Allow buttons to grow, shrink, and take up 30% of the row */
+            background-color: #0f0f0f; /* Green background color */
+            color: #fff; /* White text color */
+            height: 150px;
+            width: 150px;
+            padding: 10px 20px; /* Add some padding */
+            border: 2px solid purple; /* Remove default border */
+            border-radius: 5px; /* Add rounded corners */
+            cursor: pointer; /* Change cursor to a pointing hand */
+           align: horizontal;
+
+        }
+        .pdf-button:hover {
+            background-color: #61196f; /* Darker green background color on hover */
+        }
+    </style>
+<script>
+        function loadPDF(pdfPath) {
+            document.getElementById('pdfViewer').src = pdfPath;
+        }
+    </script>
+</head>
+<body>
+    <div class="header-box">
+        <i class="fa-regular fa-file-pdf"></i>
+
+        <h1><b>For more information, please view the following PDFs</h1></b>
+<i class="fa-solid fa-file-pdf"></i>
+
+
+    </div>
+    <ul>
+        <li><button class="pdf-button" onclick="window.open('/assets/pdf1.pdf', '_blank')">Support and Resistance</button></li>
+        <li><button class="pdf-button" onclick="window.open('/assets/pdf2.pdf', '_blank')">Pattern</button></li>
+        <li><button class="pdf-button" onclick="window.open('/assets/pdf3.pdf', '_blank')">Introduction to Indicators</button></li>
+        <li><button class="pdf-button" onclick="window.open('/assets/pdf4.pdf', '_blank')">Lagging Indicators</button></li>
+        <li><button class="pdf-button" onclick="window.open('/assets/pdf5.pdf', '_blank')">Leading Indicators</button></li>
+        <li><button class="pdf-button" onclick="window.open('/assets/pdf6.pdf', '_blank')">Dow Theory 1</button></li>
+        <li><button class="pdf-button" onclick="window.open('/assets/pdf7.pdf', '_blank')">Dow Theory 2</button></li>
+        <li><button class="pdf-button" onclick="window.open('/assets/pdf8.pdf', '_blank')">Elliot Wave Theory</button></li>
+        <li><button class="pdf-button" onclick="window.open('/assets/pdf9.pdf', '_blank')">Trading Psychology and Risk Management</button></li>
+
+    </ul>
+</body>
+</html>

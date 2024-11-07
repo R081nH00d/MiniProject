@@ -46,6 +46,22 @@ app.get("/home", function(req,res){
     res.sendFile(__dirname + "/prj.html")
 })
 
+
+app.get("/pdf", function(req,res){
+
+    res.sendFile(__dirname + "/pdfmini.html")
+})
+
+app.get("/charts", function(req,res){
+
+    res.sendFile(__dirname + "/charts.html")
+})
+
+app.get("/markets", function(req,res){
+
+    res.sendFile(__dirname + "/Markets.html")
+})
+
 /*app.get("/signup", (req, res) => {
     res.sendFile(path.join(__dirname,  "signup.html"));
 });*/
@@ -105,4 +121,4 @@ app.get("/sign", function(req, res) {
 
 
 
-app.listen(4002);
+app.listen(4005);

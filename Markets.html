@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html>
+
+    <title>Markets</title>
+  <head>
+    <style>
+      md-1col-2
+      {
+        display: flex;
+        align-items: center;
+      }
+
+      p {
+        margin-left: 40px;
+        font-size:20pt;
+      }
+
+      h2,
+      h1,
+      h3 {
+        margin-left: 40px;
+        font-size: 20pt;
+      }
+      
+      h3{
+          font-style: italic;
+      }
+
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        font-family: Poppins;
+      }
+
+      .tablink {
+        background-color: #100425;
+        color: white;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 25px 16px;
+        font-size: 20px;
+        width: 25%;
+      }
+
+      .tablink:hover {
+        background-color: #777;
+      }
+
+      .tabcontent {
+        color: white;
+        display: flex;
+        padding: 100px 20px;
+        height: auto;
+      }
+
+      #Home {
+        background-color: #a64ee9;
+      }
+
+      #News {
+        background-color: #8623c0;
+      }
+
+      #Contact {
+        background-color: #5b0197;
+      }
+
+      #About {
+        background-color: #590c7f;
+      }
+
+      /* GLOBAL STYLES */
+      body {
+        background: white;
+        justify-content: center;
+      }
+
+      .description {
+        text-align: center;
+      }
+
+      .main-title {
+        color: white;
+      }
+
+      .animate-charcter {
+        text-transform: uppercase;
+        margin: 0px;
+        padding: 0px;
+        text-align:center;
+        background-image: linear-gradient(-225deg,
+            #bd00ce 0%,
+            #003088 29%,
+            #13c4ff 67%,
+            #00eaff 100%);
+        background-size: auto auto;
+        background-size: 200% auto;
+        color: #fff;
+        background-clip: text;
+        text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 3s linear infinite;
+        font-size: 60px;
+      }
+
+      @keyframes textclip {
+        to {
+          background-position: 200% center;
+        }
+      }
+      
+      
+      
+      
+#link:hover {
+    animation: color-change 3s infinite;
+}
+
+@keyframes color-change {
+    0% {
+        color: #a64ee9; 
+    }
+    50% {
+        color: #8623c0; 
+    }
+    100% {
+        color: #590c7f; 
+    }
+}
+
+
+    </style>
+    <script>
+      function openPage(pageName, elmnt, color) {
+        // Hide all elements with class="tabcontent" by default */
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        // Remove the background color of all tablinks/buttons
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+        }
+        // Show the specific tab content
+        document.getElementById(pageName).style.display = "block";
+        // Add the specific color to the button used to open the tab content
+        elmnt.style.backgroundColor = color;
+      }
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+    
+    
+    
+  
+
+    <button class="tablink" onclick="openPage('Home', this, '#68c690')">Overview</button>
+    <button class="tablink" onclick="openPage('News', this, '#41b789')" id="defaultOpen">Long Term Investments</button>
+    <button class="tablink" onclick="openPage('Contact', this, '#247c65')">Short Term Investments</button>
+    <button class="tablink" onclick="openPage('About', this, '#245a53')">College Students</button>
+    <div class="tabcontent">
+      <div class="row">
+        <div class="md-1col-2 text-center"  style="padding: 50pxb; display: flex; flex-direction: column; justify-content: space-between; align-items: center; margin-left: 400px;">
+          <h1 style="display: flex; text-align: center; justify-content: center; color: #ffffff; font-size: 50px">
+            <i>An informational guide to leveraging your money in the </i>
+          </h1>
+          <h3 class="animate-charcter" style="display: flex; text-align: center; justify-content: center;">Short and Long </h3>
+          <h1 style="display: flex; text-align: center; justify-content: center; color:#ffffff; font-size: 50px">
+            <i>term</i>
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div id="Home" class="tabcontent" style="display: none; padding: 350px">
+  <body style="background-color: #100425">
+    <h2>An <br>informational <br>guide <br>to <br>leveraging <br>your <br>money <br>in <br>the <br>
+      <strong>short</strong>
+      <br>and <br>
+      <strong>long</strong>
+      <br>term.
+    </h2>
+    <p> Welcome to our comprehensive resource on the art of managing your finances for both immediate and future prosperity. In today's ever-changing financial landscape, making informed decisions about your money is crucial. Whether you're looking to secure your financial future or seeking strategies for short-term gains, our guide is here to empower you with the knowledge and tools needed to maximize the potential of your finances. Explore a wealth of information, tips, and strategies that will help you make informed choices and achieve your financial goals with <strong>confidence.</p>
+  </body>
+  <p></p>
+  </div>
+  <div id="News" class="tabcontent" style="display: none; padding: 350px">
+    <h1 style="margin-left:40px">
+      <strong>The <br>Long <br>Term <br>Approach </strong>
+    </h1>
+    <body>
+      <main>
+        <ul>
+          <li>
+            <h3>Stock Market</h3>
+            <p>The stock market is a financial marketplace where individuals and institutions buy and sell ownership stakes in publicly traded companies. Long-term investors often purchase stocks with the expectation of capital appreciation and potential dividends.</p>
+            <p>Example: An investor buys 100 shares of a tech company's stock with the belief that the company's innovations will drive long-term growth. Over several years, the stock price increases, and the investor decides to sell for a profit.</p>
+          </li>
+          <li>
+            <h3>Bonds</h3>
+            <p>Bonds are debt securities issued by governments, municipalities, or corporations to raise capital. Long-term bond investors lend money to the issuer in exchange for periodic interest payments and the return of the bond's face value at maturity.</p>
+            <p>Example: An individual invests in a 10-year government bond with a 3% annual interest rate. Over the bond's term, they receive interest payments and get their initial investment back when the bond matures.</p>
+          </li>
+          <li>
+            <h3>Mutual Funds</h3>
+            <p>Mutual funds pool money from multiple investors to invest in a diversified portfolio of stocks, bonds, or other assets. Long-term investors choose mutual funds to achieve diversification and professional management.</p>
+            <p>Example: An investor buys shares in a mutual fund focused on sustainable companies. Over the years, the fund's portfolio grows as it invests in environmentally responsible businesses.</p>
+          </li>
+          <li>
+            <h3>Exchange-Traded Funds (ETFs)</h3>
+            <p>Exchange-Traded Funds (ETFs) are similar to mutual funds but trade on stock exchanges like individual stocks. Long-term investors use ETFs to gain exposure to various asset classes and market sectors.</p>
+            <p>Example: An investor purchases shares in an ETF that tracks the performance of the S&P 500 index, allowing them to participate in the long-term growth of the U.S. stock market.</p>
+          </li>
+          <li>
+            <h3>Real Estate Investment Trusts (REITs)</h3>
+            <p>Real Estate Investment Trusts (REITs) are companies that own, operate, or finance income-producing real estate properties. Long-term investors often include REITs in their portfolios to benefit from real estate income and potential appreciation.</p>
+            <p>Example: An investor buys shares in a REIT specializing in commercial office buildings. Over time, they receive dividends from rental income and may benefit from property value increases.</p>
+          </li>
+        </ul>
+        <h2>Key Investment Vocabulary:</h2>
+        <ul>
+          <li>
+            <h3>Capital Appreciation</h3>
+            <p>Capital appreciation refers to the increase in the value of an investment over time. It is a key goal for many long-term investors.</p>
+            <p>Example: An investor purchases shares of a tech company at $50 per share, and over several years, the share price rises to $100 per share. The $50 increase is capital appreciation.</p>
+          </li>
+          <li>
+            <h3>Dividends</h3>
+            <p>Dividends are payments made by corporations to their shareholders as a portion of the company's earnings. Long-term investors often value dividends as a source of income.</p>
+            <p>Example: An investor owns shares of a dividend-paying company and receives quarterly dividend payments as a shareholder.</p>
+          </li>
+          <li>
+            <h3>Compound Interest</h3>
+            <p>Compound interest is the process of earning interest on both the initial investment and any accumulated interest. It can significantly boost long-term investment returns.</p>
+            <p>Example: An individual invests $10,000 in a savings account with a 5% annual interest rate. Over time, they earn interest not only on the initial $10,000 but also on the interest earned in previous periods.</p>
+          </li>
+
+
+
+        <div style="border: 2px solid black; padding: 20px; margin: 20px; width: 300px"><head>
+</head>
+<body>
+    <h1>Compound Interest Calculator</h1>
+    <form id="interestCalculator">
+        <label for="principal">Principal amount (P):</label>
+        <input type="number" id="principal" required><br><br>
+        
+        <label for="rate">Annual interest rate (r %):</label>
+        <input type="number" id="rate" required><br><br>
+        
+        <label for="time">Time (years):</label>
+        <input type="number" id="time" required><br><br>
+        
+        <label for="compounded">Compounded:</label>
+        <select id="compounded" required>
+            <option value="annually">Annually</option>
+            <option value="semiannually">Semiannually</option>
+            <option value="quarterly">Quarterly</option>
+            <option value="monthly">Monthly</option>
+        </select><br><br>
+        
+        <button type="button" onclick="calculateInterest()">Calculate</button><br><br>
+        
+        <p id="result">Compound Interest: $0</p>
+    </form>
+
+    <script>
+        function calculateInterest() {
+            const principal = parseFloat(document.getElementById("principal").value);
+            const rate = parseFloat(document.getElementById("rate").value);
+            const time = parseFloat(document.getElementById("time").value);
+            const compounded = document.getElementById("compounded").value;
+
+            const n = compounded === "annually" ? 1 : compounded === "semiannually" ? 2 : compounded === "quarterly" ? 4 : 12;
+            const r = rate / (n * 100);
+
+            const amount = principal * Math.pow(1 + r / n, n * time);
+            const interest = amount - principal;
+
+            document.getElementById("result").textContent = `Compound Interest: $${interest.toFixed(2)}`;
+        }
+    </script>
+</body>
+</div>
+
+
+
+
+
+          <li>
+            <h3>Portfolio Diversification</h3>
+            <p>Portfolio diversification involves spreading investments across a variety of asset classes to reduce risk. Long-term investors use diversification to protect their portfolios from significant losses.</p>
+            <p>Example: An investor builds a diversified portfolio by investing in stocks, bonds, and real estate, reducing the impact of poor performance in any one asset class.</p>
+          </li>
+          <li>
+            <h3>Risk Tolerance</h3>
+            <p>Risk tolerance is an investor's ability and willingness to withstand fluctuations in the value of their investments. It influences the asset allocation and investment choices of long-term investors.</p>
+            <p>Example: An investor with a high risk tolerance is comfortable with the potential for significant short-term fluctuations in their portfolio in exchange for the possibility of higher long-term returns.</p>
+          </li>
+          <li>
+            <h3>Asset Allocation</h3>
+            <p>Asset allocation is the strategic distribution of an investment portfolio among different asset classes, such as stocks, bonds, and cash. It plays a crucial role in achieving long-term financial goals.</p>
+            <p>Example: An investor chooses to allocate 70% of their portfolio to stocks and 30% to bonds based on their financial objectives and risk tolerance.</p>
+          </li>
+          <li>
+            <h3>Retirement Planning</h3>
+            <p>Retirement planning involves setting financial goals and building a long-term investment strategy to ensure a comfortable retirement. It often includes contributions to retirement accounts like 401(k)s or IRAs.</p>
+            <p>Example: A young professional starts contributing to a 401(k) plan early in their career, with the goal of building a substantial retirement nest egg over several decades.</p>
+          </li>
+          <li>
+            <h3>Passive Investing</h3>
+            <p>Passive investing involves buying and holding investments with the goal of tracking the performance of a specific market index or asset class. It is a common approach for long-term investors.</p>
+            <p>Example: An investor chooses to invest in a low-cost S&P 500 index fund, aiming to match the long-term returns of the overall U.S. stock market.</p>
+          </li>
+          <li>
+            <h3>Asset Appreciation</h3>
+            <p>Asset appreciation refers to the increase in the value of a physical or financial asset over time. It is a key driver of long-term investment growth.</p>
+            <p>Example: A homeowner experiences asset appreciation when the value of their property increases due to factors like housing market conditions and renovations.</p>
+          </li>
+          <li>
+            <h3>Long-Term Financial Goals</h3>
+            <p>Long-term financial goals are objectives that require several years or decades to achieve. Long-term investors align their investment strategies with these goals.</p>
+            <p>Example: Saving for a child's college education or building a retirement fund are common long-term financial goals that require careful investment planning.</p>
+          </li>
+          <li>
+            <h3>Capital Gain</h3>
+            <p>A capital gain is the profit earned from the sale of an investment at a price higher than its purchase price. It contributes to the overall return on an investment.</p>
+            <p>Example: An investor sells a piece of art they purchased for $5,000 a decade ago for $10,000, realizing a $5,000 capital gain.</p>
+          </li>
+          <li>
+            <h3>Tax-Deferred Accounts</h3>
+            <p>Tax-deferred accounts, such as IRAs and 401(k)s, allow individuals to invest and grow their savings while deferring taxes until retirement or withdrawal. They are valuable tools for long-term retirement planning as they allow individuals to create a long term investment solution that is exempt from taxes if rules are abided by.</p>
+            <p>Example: An individual contributes to a traditional IRA, reducing their taxable income for the year and allowing their investments to grow tax-deferred until retirement.</p>
+          </li>
+          <li>
+            <h3>Cost Basis</h3>
+            <p>Cost basis is the original purchase price of an asset, including any associated expenses. It is used to calculate capital gains or losses when the asset is sold.</p>
+            <p>Example: An investor buys 100 shares of a stock for $50 per share, incurring $10 in brokerage fees. The total cost basis is ($50 x 100) + $10 = $5,010.</p>
+          </li>
+          <li>
+            <h3>Market Volatility</h3>
+            <p>Market volatility refers to the rapid and significant price fluctuations in financial markets. Long-term investors understand that volatility is a natural part of investing. Short-term investors may use market volatility to their advantage and take quicker, shorter positions.</p>
+            <p>Example: During periods of market volatility, such as economic crises, stock prices may experience significant ups and downs over a short period, impacting long-term investors' portfolios.</p>
+          </li>
+          <li>
+            <h3>Long-Term Investment Horizon</h3>
+            <p>A long-term investment horizon reflects an investor's focus on achieving financial goals that are several years or decades in the future. It allows for patient, strategic investing. This involves their due diligence on investments, diversification plans, and other factors that will are planned to take place in their investment plans. </p>
+            <p>Example: An individual begins investing in a diversified portfolio of stocks and bonds in their 20s, with the aim of building wealth for retirement, which is 30 years away.</p>
+          </li>
+          <li>
+            <h3>Market Risk</h3>
+            <p>Market risk, also known as systematic risk, is the risk associated with the overall performance of the financial markets. Long-term investors are exposed to market risk but aim to manage it through diversification and patience. Risk may come in the form of the condition of a specific company, the economic condition of the government or the federal reserve, or the conditions of the world economy during natural disasters and pandemics.</p>
+            <p>Example: Economic downturns and recessions can lead to market risk, causing a temporary decline in the value of stocks in an investor's portfolio.</p>
+          </li>
+          <li>
+            <h3>Long-Term Investment Strategy</h3>
+            <p>A long-term investment strategy is a comprehensive plan that outlines an investor's financial goals, risk tolerance, asset allocation, and investment choices for the future. A common strategy to determining their asset management is to use blue chip stocks that have proven their stability and consistent, steady growth.</p>
+            <p>Example: An investor creates a long-term investment strategy that includes contributing regularly to a retirement account, diversifying investments, and periodically reviewing and rebalancing the portfolio.</p>
+          </li>
+          <li>
+            <h3>Initial Public Offering (IPO)</h3>
+            <p>An Initial Public Offering (IPO) is a significant financial event in which a privately held company decides to become publicly traded by issuing shares of its stock to the general public for the first time. This process involves a series of regulatory and financial steps that allow the company to raise capital from a wide range of investors, including institutional and individual investors, in exchange for ownership stakes in the company.</p>
+          </li>
+        </ul>
+      </main>
+    </body>
+  </div>
+  <div id="Contact" class="tabcontent" style="display: none; padding: 350px">
+    <h1 style="margin-left:40px">
+      <strong>The <br>Short <br>Term <br>Approach </strong>
+    </h1>
+    <body>
+      <main>
+        <ul>
+          <li>
+            <h3>Money Market Account</h3>
+            <p>A money market account is a low-risk, interest-bearing account that provides easy access to funds. It is often used for short-term savings and liquidity. These accounts typically offer higher interest rates than regular savings accounts, making them attractive options for individuals looking to earn a bit more on their cash.</p>
+            <p>Example: An individual might open a money market account to park their emergency fund. They can quickly access the money in case of unexpected expenses, and it will earn a modest interest rate.</p>
+          </li>
+          <li>
+            <h3>Certificate of Deposit (CD)</h3>
+            <p>A Certificate of Deposit (CD) is a time deposit offered by banks with a fixed interest rate and maturity date. CDs are commonly used for short-term investments where capital preservation is a priority. Investors deposit a specific amount of money for a predetermined period, and they receive the principal plus interest at maturity.</p>
+            <p>Example: An investor might purchase a 6-month CD with a 2% annual interest rate. After six months, they receive their initial deposit plus 1% interest as earnings.</p>
+          </li>
+          <li>
+            <h3>Treasury Bills (T-Bills)</h3>
+            <p>Treasury Bills (T-Bills) are short-term government securities with maturities ranging from a few days to one year. They are considered one of the safest investments because they are backed by the U.S. government. Investors purchase T-Bills at a discount to their face value and receive the full face value at maturity.</p>
+            <p>Example: An investor buys a 3-month T-Bill with a face value of $10,000 for $9,900. At the end of three months, they receive $10,000, earning $100 in interest.</p>
+          </li>
+          <li>
+            <h3>Commercial Paper</h3>
+            <p>Commercial paper is a short-term debt instrument issued by corporations to raise capital for operational needs. It typically has maturities ranging from a few days to a year. Commercial paper is considered relatively low risk because it is issued by established companies with good credit ratings.</p>
+            <p>Example: A large corporation issues commercial paper to fund its day-to-day operations, such as paying suppliers or covering payroll expenses. Investors purchase this paper and earn interest.</p>
+          </li>
+          <li>
+            <h3>Short-Term Bond Funds</h3>
+            <p>Short-term bond funds are mutual funds or ETFs that invest in fixed-income securities with shorter maturities. These funds offer diversification and the potential for higher yields than cash equivalents. Investors in short-term bond funds receive returns based on the interest earned by the underlying bonds in the fund's portfolio.</p>
+            <p>Example: An individual invests in a short-term bond fund with a diverse mix of bonds, including corporate and government bonds. The fund earns interest, and the investor receives periodic distributions as income.</p>
+          </li>
+        </ul>
+        <h2>Key Investment Vocabulary:</h2>
+        <ul>
+          <li>
+            <h3>Liquidity</h3>
+            <p>Liquidity refers to the ease with which an investment can be converted into cash without significant loss of value. Highly liquid assets can be quickly bought or sold in the market.</p>
+            <p>Example: A money market account is highly liquid because you can withdraw funds at any time without incurring substantial penalties or market fluctuations.</p>
+          </li>
+          <li>
+            <h3>Yield Curve</h3>
+            <p>The yield curve is a graphical representation of interest rates on debt for a range of maturities. It helps investors and analysts understand the relationship between short-term and long-term interest rates.</p>
+            <p>Example: A normal yield curve typically slopes upward, with longer-term bonds offering higher yields than shorter-term bonds. An inverted yield curve, on the other hand, may indicate economic uncertainty.</p>
+          </li>
+          <li>
+            <h3>Capital Preservation</h3>
+            <p>Capital preservation is a primary goal of short-term investing, focused on protecting the initial investment amount. Short-term investments with low risk are often chosen to safeguard capital.</p>
+            <p>Example: An investor nearing retirement might prioritize capital preservation to ensure they have a stable financial base as they transition into retirement.</p>
+          </li>
+          <li>
+            <h3>Tight Monetary Policy</h3>
+            <p>Tight monetary policy is a central bank's strategy to control inflation by raising interest rates. It can impact short-term investments by making borrowing more expensive and potentially slowing economic growth.</p>
+            <p>Example: If the central bank raises interest rates to combat rising inflation, it may lead to higher yields on short-term bonds and T-Bills.</p>
+          </li>
+          <li>
+            <h3>Market Liquidity</h3>
+            <p>Market liquidity is the ability to buy or sell an asset quickly without causing significant price fluctuations. Assets with high liquidity are easily traded in active markets.</p>
+            <p>Example: Stocks of large, well-known companies often have high market liquidity because they are actively traded on major stock exchanges.</p>
+          </li>
+          <li>
+            <h3>Rolling Returns</h3>
+            <p>Rolling returns represent the average annual return on an investment over various short-term periods, such as three months or one year. Investors use rolling returns to evaluate historical performance.</p>
+            <p>Example: An investor reviews the rolling returns of a mutual fund over the past five years to assess how it performed during different market conditions.</p>
+          </li>
+          <li>
+            <h3>Stop-Loss Order</h3>
+            <p>A stop-loss order is a predefined order to sell an asset when its price falls to a certain level. It is used to limit potential losses and protect an investment's value.</p>
+            <p>Example: An investor sets a stop-loss order for a stock at 10% below its purchase price. If the stock's price falls by 10%, the order automatically triggers a sale to minimize further losses.</p>
+          </li>
+          <li>
+            <h3>Cash Equivalent</h3>
+            <p>Cash equivalents are highly liquid and low-risk assets that are easily convertible to cash. They provide a safe haven for short-term investments.</p>
+            <p>Example: Treasury bills are often considered cash equivalents because they can be sold quickly for cash and are backed by the U.S. government.</p>
+          </li>
+          <li>
+            <h3>Short-Term Volatility</h3>
+            <p>Short-term volatility measures the degree of variation in the price of an asset over a short period. It is often associated with risk and uncertainty in the market.</p>
+            <p>Example: A stock that experiences frequent price fluctuations over a few days is exhibiting short-term volatility.</p>
+          </li>
+          <li>
+            <h3>Asset Liquidity</h3>
+            <p>Asset liquidity refers to the ease with which a particular asset can be converted into cash. Assets with high liquidity can be sold quickly with minimal impact on their market price.</p>
+            <p>Example: Real estate can have lower asset liquidity compared to stocks because selling a property may take longer and involve more paperwork.</p>
+          </li>
+          <li>
+            <h3>Emergency Fund</h3>
+            <p>An emergency fund is a savings account or other easily accessible funds set aside to cover unexpected expenses, such as medical bills or car repairs.</p>
+            <p>Example: An individual maintains an emergency fund equivalent to three months' worth of living expenses to provide a financial safety net in case of unforeseen circumstances.</p>
+          </li>
+          <li>
+            <h3>Trading Strategies</h3>
+            <p>Trading strategies are approaches used to capitalize on short-term market movements. These strategies include day trading, swing trading, and trend following, among others.</p>
+            <p>Example: A day trader buys and sells stocks within the same trading day, aiming to profit from short-term price fluctuations.</p>
+          </li>
+          <li>
+            <h3>Capital Gain Tax</h3>
+            <p>Capital gain tax is a tax levied on the profit generated from the sale of a short-term investment. The tax rate may vary depending on the duration of ownership and the tax laws of the jurisdiction.</p>
+            <p>Example: An individual sells a stock for a profit of $5,000 after owning it for six months. They may be subject to capital gain tax on this profit.</p>
+          </li>
+          <li>
+            <h3>Hedging</h3>
+            <p>Hedging involves using financial instruments to offset potential losses in a short-term investment position. It is a risk management strategy.</p>
+            <p>Example: An investor holds a portfolio of stocks and purchases put options to protect against potential market downturns. If the market declines, the put options can help offset losses.</p>
+          </li>
+          <li>
+            <h3>Market Sentiment</h3>
+            <p>Market sentiment refers to the overall attitude or mood of investors and traders in the short-term market. It can influence market behavior and stock prices.</p>
+            <p>Example: Positive market sentiment may result from favorable economic news, leading to increased buying activity and rising stock prices.</p>
+          </li>
+          <li>
+            <h3>Risk Management</h3>
+            <p>Risk management strategies are employed to minimize potential losses in short-term investments. These strategies may include diversification, stop-loss orders, and position sizing.</p>
+            <p>Example: An investor diversifies their short-term investment portfolio by holding a mix of assets across different sectors to reduce the impact of a poor-performing asset.</p>
+          </li>
+          <li>
+            <h3>Short-Term Investment Horizon</h3>
+            <p>A short-term investment horizon reflects a focus on investments with the expectation of relatively quick returns, typically within a year or less.</p>
+            <p>Example: An individual saving for a down payment on a home plans to invest in short-term, high-liquidity assets to reach their goal within a year.</p>
+          </li>
+          <li>
+            <h3>Technical Analysis</h3>
+            <p>Technical analysis involves evaluating short-term investment opportunities based on historical price and volume data. Chart patterns and indicators are commonly used in this analysis.</p>
+            <p>Example: A technical analyst studies a stock's price chart and identifies a bullish trend reversal pattern, suggesting a potential buying opportunity.</p>
+          </li>
+          <li>
+            <h3>Return on Investment (ROI)</h3>
+            <p>Return on Investment (ROI) is a measure of the profitability of a short-term investment, expressed as a percentage. It calculates the gain or loss relative to the initial investment.</p>
+            <p>Example: An investor purchases a bond for $1,000 and receives $1,050 at maturity. The ROI is ($1,050 - $1,000) / $1,000 = 5%.</p>
+          </li>
+          <li>
+            <h3>Tax-Efficiency</h3>
+            <p>Tax-efficiency strategies aim to minimize the tax impact of short-term investment gains. These strategies may involve tax-efficient investments or tax-advantaged accounts.</p>
+            <p>Example: An investor holds tax-efficient ETFs in a tax-advantaged retirement account to reduce their tax liability on investment gains.</p>
+          </li>
+          <li>
+            <h3>Market Timing</h3>
+            <p>Market timing involves attempting to predict the best times to buy or sell short-term investments based on market conditions, economic indicators, or technical analysis.</p>
+            <p>Example: An investor waits for a significant market correction before purchasing stocks, believing that prices will soon rebound.</p>
+          </li>
+          <li>
+            <h3>Cash Flow Management</h3>
+            <p>Cash flow management entails monitoring and optimizing the movement of funds in and out of short-term investments. It helps individuals and businesses maintain liquidity and meet financial goals.</p>
+            <p>Example: A business carefully manages its cash flow to ensure it has enough working capital to cover operational expenses and pursue growth opportunities.</p>
+          </li>
+          <li>
+            <h3>Trading Platform</h3>
+            <p>A trading platform is software or tools used for executing and managing short-term investment transactions. It provides access to financial markets and real-time data.</p>
+            <p>Example: A day trader uses a trading platform to execute buy and sell orders for stocks, monitor market prices, and access technical analysis tools.</p>
+          </li>
+          <li>
+            <h3>Propriety Trading Firms</h3>
+            <p>A Propriety trading firm is an institution with objectives to find consistently profitable traders and mutually profit. In collaboration with traders, propreity firms offer the opportunity to trade with large account sizes if traders prove their profitability through examinations. This is a common route taken by traders who seek more captial to trade with. </p>
+            <p>Example: A day trader uses a propriety firm to trade with a $100,000 account in order to use their skills and earn higher margin profits for their knowledge and mastery.</p>
+          </li>
+        </ul>
+      </main>
+    </body>
+  </div>
+  <div id="About" class="tabcontent" style="display: none; padding: 350px">
+    <h1 style="margin-left:40px">
+      <strong>College <br>Student <br>Financial <br>Guide </strong>
+    </h1>
+    <body>
+      <main>
+        <ul>
+          <li>
+            <h3>Budgeting</h3>
+            <p>Budgeting involves creating a monthly spending plan to track income and expenses. It ensures that money is allocated for essential needs and savings.</p>
+            <p>Example: A person creates a budget that allocates a portion of their income to rent, groceries, savings, and entertainment expenses.</p>
+          </li>
+          <li>
+            <h3>Emergency Fund</h3>
+            <p>An emergency fund is a savings account set aside to cover unexpected expenses like medical bills, recessions, job loss, natural disasters, or car repairs. A common rule of thumb is to maintain an emergency fund that one may survive with for ideally a period of 6 months. </p>
+            <p>Example: A family maintains an emergency fund equal to six months' worth of living expenses to prepare for unexpected financial setbacks.</p>
+          </li>
+          <li>
+            <h3>Credit Score</h3>
+            <p>A credit score is a numerical representation of creditworthiness used by lenders to assess the risk of lending to an individual. Credit score is an important tool for large financial purchases such as loans, house payments, car payments, and other sucb payments. </p>
+            <p>Example: A person checks their credit score and finds it to be 750, indicating good creditworthiness.</p>
+          </li>
+          <li>
+            <h3>Credit Report</h3>
+            <p>A credit report is a detailed record of an individual's credit history, including credit accounts, payment history, and public records.</p>
+            <p>Example: Lenders review an applicant's credit report to assess their creditworthiness before approving a loan.</p>
+          </li>
+          <li>
+            <h3>Interest Rates</h3>
+            <p>Interest rates refer to the cost of borrowing money or the return on investment for savings accounts and investments.</p>
+            <p>Example: A person with a high-yield savings account earns 2% interest annually on their savings balance.</p>
+          </li>
+          <li>
+            <h3>Credit Card Management</h3>
+            <p>Credit card management involves understanding how credit cards work, including minimum payments, interest rates, and avoiding credit card debt.</p>
+            <p>Example: An individual pays their credit card balance in full each month to avoid paying interest on purchases.</p>
+          </li>
+          <li>
+            <h3>Savings and Investment</h3>
+            <p>Savings and investment strategies involve saving money and potentially investing it for long-term financial goals. This may include investing in retirement plans, the stock market, real estate, and other such investments.</p>
+            <p>Example: An investor regularly contributes to a diversified portfolio of stocks and bonds to save for retirement.</p>
+          </li>
+          <li>
+            <h3>Student Loans</h3>
+            <p>Understanding student loans includes knowledge of different types of student loans, repayment options, and the impact of interest rates on loan balances. Different student loans include private or federal loans.</p>
+            <p>Example: A recent graduate explores income-driven repayment plans for their federal student loans to manage monthly payments effectively.</p>
+          </li>
+          <li>
+            <h3>Financial Goals</h3>
+            <p>Setting specific, measurable, achievable, relevant, and time-bound (SMART) financial goals is essential for financial planning.</p>
+            <p>Example: An individual sets a SMART financial goal to save $10,000 for a down payment on a home within the next two years.</p>
+          </li>
+          <li>
+            <h3>Credit Utilization</h3>
+            <p>Managing credit utilization involves maintaining the percentage of available credit used on credit cards to maintain a healthy credit score.</p>
+            <p>Example: To improve their credit score, a person lowers their credit card balances to utilize only 30% of their available credit.</p>
+          </li>
+          <li>
+            <h3>Debt Management</h3>
+            <p>Debt management strategies include paying off debt efficiently, with a focus on prioritizing high-interest debt.</p>
+            <p>Example: A person uses the debt avalanche method to pay off high-interest credit card debt before tackling lower-interest loans.</p>
+          </li>
+          <li>
+            <h3>Credit History</h3>
+            <p>Building a positive credit history involves making on-time payments and the responsible use of credit.</p>
+            <p>Example: A young adult establishes a credit history by opening a credit card account and paying their bills promptly.</p>
+          </li>
+        </ul>
+        <h2>Key Financial Vocabulary:</h2>
+        <ul>
+          <li>
+            <h3>FICO Score</h3>
+            <p>The FICO Score is a widely used credit scoring model that ranges from 300 to 850. Higher scores indicate better creditworthiness.</p>
+            <p>Example: An individual checks their FICO Score and discovers they have a score of 750, which is considered excellent.</p>
+          </li>
+          <li>
+            <h3>Interest-Free Grace Period</h3>
+            <p>The interest-free grace period is the time during which credit card purchases do not accrue interest if the balance is paid in full by the due date.</p>
+            <p>Example: A credit card has a 25-day interest-free grace period, allowing the cardholder to avoid interest charges if they pay their balance in full within that time frame.</p>
+          </li>
+          <li>
+            <h3>Credit Limit</h3>
+            <p>The credit limit is the maximum amount you can charge on a credit card or the total amount you're approved to borrow on a credit line.</p>
+            <p>Example: A credit card has a $5,000 credit limit, meaning the cardholder can make purchases up to that amount.</p>
+          </li>
+          <li>
+            <h3>Compound Interest</h3>
+            <p>Compound interest refers to earning or paying interest on both the initial principal and previously earned interest.</p>
+            <p>Example: An investor earns compound interest on a savings account, allowing their money to grow faster over time.</p>
+          </li>
+
+
+
+        <div style="border: 2px solid black; padding: 20px; margin: 20px; width: 300px"><head>
+    <title>Compound Interest Calculator</title>
+</head>
+<body>
+    <h1>Compound Interest Calculator</h1>
+    <form id="interestCalculator">
+        <label for="principal">Principal amount (P):</label>
+        <input type="number" id="principal" required><br><br>
+        
+        <label for="rate">Annual interest rate (r %):</label>
+        <input type="number" id="rate" required><br><br>
+        
+        <label for="time">Time (years):</label>
+        <input type="number" id="time" required><br><br>
+        
+        <label for="compounded">Compounded:</label>
+        <select id="compounded" required>
+            <option value="annually">Annually</option>
+            <option value="semiannually">Semiannually</option>
+            <option value="quarterly">Quarterly</option>
+            <option value="monthly">Monthly</option>
+        </select><br><br>
+        
+        <button type="button" onclick="calculateInterest()">Calculate</button><br><br>
+        
+        <p id="result">Compound Interest: $0</p>
+    </form>
+
+    <script>
+        function calculateInterest() {
+            const principal = parseFloat(document.getElementById("principal").value);
+            const rate = parseFloat(document.getElementById("rate").value);
+            const time = parseFloat(document.getElementById("time").value);
+            const compounded = document.getElementById("compounded").value;
+
+            const n = compounded === "annually" ? 1 : compounded === "semiannually" ? 2 : compounded === "quarterly" ? 4 : 12;
+            const r = rate / (n * 100);
+
+            const amount = principal * Math.pow(1 + r / n, n * time);
+            const interest = amount - principal;
+
+            document.getElementById("result").textContent = `Compound Interest: $${interest.toFixed(2)}`;
+        }
+    </script>
+</body>
+</div>
+
+
+          <li>
+            <h3>APR (Annual Percentage Rate)</h3>
+            <p>The APR represents the annual cost of borrowing money, including interest and fees, expressed as a percentage.</p>
+            <p>Example: A credit card has an APR of 18%, indicating the cost of carrying a balance on the card for a year.</p>
+          </li>
+          <li>
+            <h3>Secured vs. Unsecured Loans</h3>
+            <p>Secured loans require collateral, while unsecured loans do not. Collateral is an asset that can be seized by the lender if the borrower defaults.</p>
+            <p>Example: A mortgage is a secured loan because the home serves as collateral. In contrast, credit card debt is unsecured.</p>
+          </li>
+          <li>
+            <h3>Credit Inquiry</h3>
+            <p>A credit inquiry is a record of when someone accesses your credit report, categorized as a "hard inquiry" (e.g., credit application) or "soft inquiry" (e.g., background check).</p>
+            <p>Example: Applying for a car loan results in a hard inquiry on your credit report, potentially affecting your credit score.</p>
+          </li>
+          <li>
+            <h3>Debt-to-Income Ratio (DTI)</h3>
+            <p>The debt-to-income ratio is the percentage of monthly income used to cover debt payments, including rent, loans, and credit card minimum payments.</p>
+            <p>Example: A person's total monthly debt payments amount to $1,500, while their monthly income is $4,000, resulting in a DTI ratio of 37.5%.</p>
+          </li>
+          <li>
+            <h3>Grace Period</h3>
+            <p>The grace period is the time between the end of a billing cycle and the due date for payment, during which interest may not accrue.</p>
+            <p>Example: A credit card statement closes on the 1st of the month, and the due date is the 25th of the same month. During this period, the cardholder can pay the balance without incurring interest.</p>
+          </li>
+          <li>
+            <h3>Annual Fee</h3>
+            <p>An annual fee is a yearly charge associated with some credit cards, which may be waived or offset by rewards.</p>
+            <p>Example: A premium rewards credit card has an annual fee of $95, but it offers cashback rewards that exceed the fee's cost for the cardholder.</p>
+          </li>
+          <li>
+            <h3>Late Payment Fee</h3>
+            <p>A late payment fee is charged when a credit card payment is not made by the due date.</p>
+            <p>Example: A credit card statement has a due date of the 15th of the month, and the cardholder misses the payment. They are charged a late payment fee of $25.</p>
+          </li>
+          <li>
+            <h3>Default</h3>
+            <p>Default occurs when a borrower fails to meet the terms of a loan or credit agreement, which can have serious consequences for credit scores.</p>
+            <p>Example: If a person consistently misses payments on their auto loan, the lender may repossess the vehicle due to default.</p>
+          </li>
+          <li>
+            <h3>Authorized User</h3>
+            <p>An authorized user is someone given permission to use another person's credit card account, potentially impacting both parties' credit histories.</p>
+            <p>Example: Parents may add their college-aged child as an authorized user on their credit card account to help them establish credit.</p>
+          </li>
+          <li>
+            <h3>Identity Theft</h3>
+            <p>Identity theft is the unauthorized use of someone's personal information for financial gain.</p>
+            <p>Example: A criminal obtains an individual's social security number and uses it to open credit card accounts in their name, resulting in identity theft.</p>
+          </li>
+          <li>
+            <h3>Credit Counseling</h3>
+            <p>Credit counseling provides professional assistance in managing debt and improving financial literacy.</p>
+            <p>Example: A person struggling with debt seeks credit counseling services to create a debt repayment plan and improve their financial knowledge.</p>
+          </li>
+          <li>
+            <h3>Co-signing</h3>
+            <p>Co-signing involves agreeing to be responsible for someone else's debt if they default, which can impact your credit.</p>
+            <p>Example: A parent co-signs their child's auto loan, allowing them to qualify for the loan but making the parent responsible if the child fails to make payments.</p>
+          </li>
+        </ul>
+      </main>
+    </body>
+  </div>
+  </div>
+  </style>
+  </head>
+</html>
